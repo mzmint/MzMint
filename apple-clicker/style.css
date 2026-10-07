@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Mont";
+    src: url("/mont.ttf") format("truetype");
+}
+
+body {
+    background-color: #00ffaf;
+    font-family: Mont, sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 30px 30px 30px 50px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 50px 30px 30px 50px;
+}
+
+a {
+    font-size: 24px;
+    margin: 20px 20px 20px 150px;
+}

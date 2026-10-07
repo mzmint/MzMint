@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Mont";
-    src: url("mont.ttf") format("truetype");
+    src: url("../mont.ttf") format("truetype");
 }
 
 body {
@@ -20,4 +20,10 @@ h1 {
     padding: 10px 20px;
     margin: 20px 20px 20px 150px;
     font-family: Mont, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }

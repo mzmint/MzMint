@@ -13,12 +13,11 @@ h1 {
     margin: 30px 30px 30px 50px;
 }
 
-h2 {
-    font-size: 48px;
-    margin: 50px 30px 30px 50px;
-}
-
-a {
-    font-size: 24px;
+.btn {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 32px;
+    padding: 10px 20px;
     margin: 20px 20px 20px 150px;
+    font-family: Mont, sans-serif;
 }

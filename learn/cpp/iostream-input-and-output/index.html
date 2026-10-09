@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGSPF82QFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TGSPF82QFJ');
+    </script>
+    <meta charset="UTF-8">
+    <title>iostream, Input and Output - C++</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <a href="/MzMint/projects/">Projects</a>
+        <a href="/MzMint/learn/">Learn</a>
+        <a href="https://github.com/mzmint">Github</a>
+    </nav>
+</header>
+<h1>iostream, Input, and Output</h1>
+<p>The <code>iostream</code> library is the most used library in C++.</p>
+<p>It comes with the Standard Library and its main purpose is to receive input and send output through the console.</p>
+<p>To start using the library, add <code>#include &lt;iostream&gt;</code> at the top of the .cpp file.</p>
+<h2>Output</h2>
+<p>Output is the one of the most useful features in programming, as it lets you print anything in the console, like words, values, or texts.</p>
+<p>The object most used for output in the <code>iostream</code> library is <code>std::cout</code>.</p>
+<p>You can use <code>std::cout</code> to print a sentence or word, like <code>std::cout &lt;&lt; "Hello, World!";</code>, you can print values: <code>std::cout &lt;&lt; 55;</code>, you can print variables: <code>std::cout &lt;&lt; variable;</code>, and much more.</p>
+<h3>Concatenating</h3>
+<p>To concatenate values with <code>std::cout</code> you just need to add <code>&lt;&lt;</code> between them, for example: <code>std::cout &lt;&lt; "Hello, " &lt;&lt; "World! " &lt;&lt; 16;</code> which would print <code>Hello, World! 16</code>.</p>
+<h3>New Line</h3>
+<p>To switch to a new line using <code>std::cout</code> you just need to put <code>std::endl</code> where you want to, for example: <code>std::cout &lt;&lt; "Hello" &lt;&lt; std::endl &lt;&lt; "World";</code>, which would print</p>
+<pre><code>Hello
+  World</code></pre>
+<p>You can also use the control character \n where you want to switch to a new line, like <code>std::cout &lt;&lt; "Hello\nWorld";</code></p>
+<h2>Input</h2>
+<p>Input is used to receive user input from the console and store it in a variable;</p>
+<p>The object most used for input in the <code>iostream</code> library is <code>std::cin</code>.</p>
+<p>You can store a string in a variable (numbers work too and it only stores up to a whitespace, so if the input is John Smith it only stores John, later we will learn how to store a full string) using <code>std::cin &gt;&gt; variable;</code></p>
+<h3>Multiple Inputs</h3>
+<p>You can take multiple inputs at once using <code>std::cin</code> by adding <code>&gt;&gt;</code> between the variables, like <code>std::cin &gt;&gt; name &gt;&gt; value;</code></p>
+<h2>Code example</h2>
+<p>Heres a code example combining everything we've learned:</p>
+<pre><code>#include &lt;iostream&gt;
+
+  int main() {
+      int number;
+
+      std::cout &lt;&lt; "Enter a number: ";
+      std::cin &gt;&gt; number;
+
+      std::cout &lt;&lt; "You entered: " &lt;&lt; number &lt;&lt; std::endl;
+
+    return 0;
+  }</code></pre>
+</body>
+</html>

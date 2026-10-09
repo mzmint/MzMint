@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Mont";
+    src: url("../../../Montserrat-Bold.ttf") format("truetype");
+}
+
+body {
+    background-color: #10ffbf;
+    font-family: Mont, sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 30px 30px 30px 50px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 50px 30px 30px 50px;
+}
+
+h3 {
+    font-size: 42px;
+    margin: 50px 30px 30px 50px;
+}
+
+a {
+    font-size: 24px;
+    margin: 100px 20px 20px 0;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    margin: 50px 30px 30px 50px;
+}
+
+pre {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+pre code {
+    color: white;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 15px;
+}
+
+code {
+    color: white;
+    background-color: #1e1e1e;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 15px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.note {
+    font-size: 1.3rem;
+    color: #202020;
+}

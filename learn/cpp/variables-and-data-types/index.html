@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGSPF82QFJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TGSPF82QFJ');
+    </script>
+    <meta charset="UTF-8">
+    <title>Variables and Data Types - C++</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <a href="/MzMint/projects/">Projects</a>
+        <a href="/MzMint/learn/">Learn</a>
+        <a href="https://github.com/mzmint">Github</a>
+    </nav>
+</header>
+<h1>Variables and Data Types</h1>
+<h2>Variables</h2>
+<p>Variables are some of the most useful things is programming.</p>
+<p>They can be used to store constant values (later we will learn how), do calculations, and much more.</p>
+<p>To make a variable in C++, put the variable type, the name, an <code>=</code>, and the value, for example: <code>int number = 55;</code></p>
+<p>You don't need to immediately assign a value to a variable, for example: <code>int number;</code></p>
+<p>To change the value of a variable after it has been created, you don't need to put the type, just the name and the value, for example: </p>
+<pre><code>int number = 55;
+  number = 16;</code></pre>
+<p>which makes <code>number</code> equal to 16;</p>
+<h2>Data Types</h2>
+<p>Data types are used in variables, to decide if the variable is a number, a word, etc., in functions, do decide what the function returns, etc.</p>
+<p>There are dozens of data types, but these are the most used;</p>
+<h2>int</h2>
+<p><code>int</code> stands for integer, and it's the most used data type in coding.</p>
+<p>It can hold any 32 bit value, which means it can be any integer from -2147483648 to 2147483647.</p>
+<h2>double</h2>
+<p><code>double</code> is a data type that can hold numbers with decimal points.</p>
+<p>It holds a 64 bit value with a range from −1.7976931348623157×10^308 to 1.7976931348623157×10^308.</p>
+<p>A double doesn't need to be exactly 64 bits, but we will see this later.</p>
+<h2>bool</h2>
+<p><code>bool</code> is one of the simplest data types. it holds either <code>true</code> or <code>false</code></p>
+<h2>string</h2>
+<p><code>string</code> is a special data type. to use it you need to add <code>#include &lt;string&gt;</code> at the top of the file</p>
+<p>to make a <code>string</code> variable you do <code>std::string message = "Hello, World!";</code></p>
+<p>The limit of a string is 2^62 characters, or 4611686018427387897 characters, but you can assume its infinite because you would need millions of terabytes to store a string that big.</p>
+<p>There are other data types, which you will learn later, but these are the most used.</p>
+<p>Here's an example of variables of the four types we've learned:</p>
+<pre><code>int age = 16;
+  double height = 1.75;
+  bool isProgrammer = true;
+  std::string name = "Alex";</code></pre>
+</body>
+</html>

@@ -7,3 +7,8 @@ const mcbtn = document.getElementById("mcbtn")! as HTMLButtonElement;
 mcbtn.addEventListener("click", () => {
     window.location.href = "mintcalc/";
 });
+
+const mclbtn = document.getElementById("mclbtn")! as HTMLButtonElement;
+mclbtn.addEventListener("click", () => {
+    window.location.href = "mintclock/";
+});

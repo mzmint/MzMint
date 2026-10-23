@@ -12,3 +12,8 @@ const mclbtn = document.getElementById("mclbtn")! as HTMLButtonElement;
 mclbtn.addEventListener("click", () => {
     window.location.href = "mintclock/";
 });
+
+const ulbtn = document.getElementById("ulbtn")! as HTMLButtonElement;
+ulbtn.addEventListener("click", () => {
+    window.location.href = "unicode-list/";
+});

@@ -12,6 +12,33 @@
         gtag('config', 'G-TGSPF82QFJ');
     </script>
     <script src="index.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pages = [
+                "/MzMint/home",
+                "/MzMint/projects/",
+                "/MzMint/projects/mintcalc/",
+                "/MzMint/projects/apple-clicker/",
+                "/MzMint/projects/mintclock/",
+                "/MzMint/projects/unicode-list/",
+                "/MzMint/learn/",
+                "/MzMint/learn/cpp/",
+                "/MzMint/learn/cpp/iostream-input-and-output/",
+                "/MzMint/learn/cpp/the-first-program/",
+                "/MzMint/learn/cpp/the-standard-library/",
+                "/MzMint/learn/cpp/variables-and-data-types/"
+            ];
+
+            const randomLink = document.getElementById("randomPage");
+
+            randomLink.addEventListener("click", function(event) {
+                event.preventDefault();
+
+                const randomIndex = Math.floor(Math.random() * pages.length);
+                window.location.href = pages[randomIndex];
+            });
+        });
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +47,7 @@
         <a href="/MzMint/projects/">Projects</a>
         <a href="/MzMint/learn/">Learn</a>
         <a href="https://github.com/mzmint">Github</a>
+        <a href="#" id="randomPage">Random Page</a>
     </nav>
 </header>
 </body>
